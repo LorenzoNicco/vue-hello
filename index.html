@@ -10,9 +10,11 @@
     </head>
     <body>
         <div id="app">
-            <h1>{{ message }}</h1>
+            <div :class="bgStyle()">
+                <h1 :class="centerClass">{{ message }}</h1>
 
-            <img v-bind:src="pic">
+                <img v-bind:class="imageStyle()" v-bind:src="pic">
+            </div>
         </div>
 
         <!-- CDN VUEJS -->
